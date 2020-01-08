@@ -1,35 +1,81 @@
-function suma(a, b){
- 	return a + b;
-}
+var resultado = " "
+var memory = 0
 
-function resta(a, b){
-	return a - b;
-}
+	window.onload = function () {
 
-function dividir(a, b){
-	if (b !== 0) {
-		return a / b;
-	} else {
-		return "error"
+	document.getElementById("1").onclick = function () {
+		resultado += "1";
+		document.getElementById("display").innerHTML = resultado;
 	}
-}
 
-function multiplicar(a, b){
-	return a * b;
-}
+	document.getElementById("2").onclick = function () {
+		resultado += "2";
+		document.getElementById("display").innerHTML = resultado;
+	}
 
+	document.getElementById("3").onclick = function () {
+		resultado += "3";
+		document.getElementById("display").innerHTML = resultado;
+	}
 
-/*var divDisplay = document.getElementById('display');
-divDisplay.parentNode.removeChild(divDisplay); //Elimina el nodo actual
-*/
+	document.getElementById("4").onclick = function () {
+		resultado += "4";
+		document.getElementById("display").innerHTML = resultado;
+	}
 
-var accionar = function() {
-	var miParrafo = document.createElement('p'); 
-	var miTexto = document.createTextNode('pirulo'); 
-	miParrafo.appendChild(miTexto); 
-	var divDisplay = document.getElementById('display'); //Obtenemos el div display 
-	divDisplay.appendChild(miParrafo); //Agregamos el párrafo al display
-} 
-window.onload = function() { 
-	document.getElementById('button').onclick = accionar;
-}
+	document.getElementById("5").onclick = function () {
+		resultado += "5";
+		document.getElementById("display").innerHTML = resultado;
+	}
+
+	document.getElementById("6").onclick = function () {
+		resultado += "6";
+		document.getElementById("display").innerHTML = resultado;
+	}
+
+	document.getElementById("7").onclick = function () {
+		resultado += "7";
+		document.getElementById("display").innerHTML = resultado;
+	}
+
+	document.getElementById("8").onclick = function () {
+		resultado += "8";
+		document.getElementById("display").innerHTML = resultado;
+	}
+
+	document.getElementById("9").onclick = function () {
+		resultado += "9";
+		document.getElementById("display").innerHTML = resultado;
+	}
+
+	document.getElementById("0").onclick = function () {
+		resultado += "0";
+		document.getElementById("display").innerHTML = resultado;
+	}
+
+	document.getElementById(".").onclick = function () {
+		resultado += ".";
+		document.getElementById("display").innerHTML = resultado;
+	}
+
+	document.getElementById("/").onclick = function () {
+		resultado += "/";
+		document.getElementById("display").innerHTML = resultado;
+	}
+
+	document.getElementById("+").onclick = function () {
+		resultado += "+";
+		document.getElementById("display").innerHTML = resultado;
+	}
+
+	document.getElementById("-").onclick = function () {
+		resultado += "-";
+		document.getElementById("display").innerHTML = resultado;
+	}
+
+	document.getElementById("*").onclick = function () {
+		resultado += "*";
+		document.getElementById("display").innerHTML = resultado;
+	}
+	
+	}
