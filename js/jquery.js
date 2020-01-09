@@ -1,7 +1,9 @@
-var resultado = " "
-var memory = 0
+var resultado = " ";
+var memory = 0;
+var calculo = 0;
 
 	window.onload = function () {
+
 
 	document.getElementById("1").onclick = function () {
 		resultado += "1";
@@ -78,4 +80,65 @@ var memory = 0
 		document.getElementById("display").innerHTML = resultado;
 	}
 	
+}
+	document.getElementById("=").onclick = function () {
+		try {
+			resultado = eval(resultado);
+			document.getElementById("display").innerHTML = resultado;
+		}
+		catch (ex) {
+			document.getElementById("display").innerHTML = "Error";
+			resultado = "";
+			}
 	}
+
+	document.getElementById("C").onclick = function () {
+		document.getElementById("display").innerHTML = "";
+		resultado = "";
+	}
+
+	document.getElementById("MC").onclick = function () {
+		document.getElementById("display").innerHTML = "";
+		memory = 0;
+		resultado = "";
+	}
+
+	document.getElementById("M+").onclick = function () {
+		try {
+		calculo = eval(resultado);			
+			if (!isNaN(calculo)) {
+				memory += calculo
+				document.getElementById("display").innerHTML = memory;
+				resultado = memory.toString();
+			} else if (resultado === "") { 
+				document.getElementById("display").innerHTML = memory;
+				resultado = memory.toString();	 
+			} else {
+				document.getElementById("display").innerHTML = memory;
+			}	
+		} 
+		catch (sa) {
+			document.getElementById("display").innerHTML = "Error";
+			resultado = "";	
+		}
+	}
+
+	document.getElementById("M-").onclick = function () {
+		try {
+			calculo = eval(resultado);			
+				if (!isNaN(calculo)) {
+					memory -= calculo
+					document.getElementById("display").innerHTML = memory;
+					resultado = memory.toString();
+				} else if (resultado === "") { 
+					document.getElementById("display").innerHTML = memory;
+					resultado = memory.toString();	 
+				} else {
+					document.getElementById("display").innerHTML = memory;
+				}	
+			} 
+			catch (sa) {
+				document.getElementById("display").innerHTML = "Error";
+				resultado = "";	
+			}
+		}
