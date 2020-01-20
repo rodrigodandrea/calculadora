@@ -1,58 +1,57 @@
 #calc-corpse {
-position: relative;
-margin: 0px auto 0px auto;
-width: 70vmin;
-height: 93vmin;
-padding-top: 2%;
-background-color: rgba(1, 17, 238, 0.747);
-border: 1px solid rgba(0, 0, 0, 0.747);
-border-radius: 5%;
+    position: relative;
+    margin: 0px auto 0px auto;
+    width: 70vmin;
+    height: 93vmin;
+    padding-top: 2%;
+    background-color: rgba(1, 17, 238, 0.747);
+    border: 1px solid rgba(0, 0, 0, 0.747);
+    border-radius: 5%;
 }
-#display{
-position: relative;
-width: 80%;
-height: 13%;
-margin: 0 auto;
-background-color: rgba(255, 255, 255, 1);
-border-radius: 2vh 2vh;
-justify-content: flex-end;
-align-items: center;
-display: flex;
-padding-left: 1%;
-font-size: 5vh;
-overflow: hidden;
-
+#display {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; 
+    width: 80%;
+    height: 13%;
+    margin: 0 auto;
+    padding-left: 1%;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 2vh 2vh;
+    font-size: 5vh;
+    overflow: hidden;
 }
-#buttons{
-position: relative;
-width: 80%;
-height: 83%;
-padding-top: 5%;
-margin: 0 auto;
-display: flex;
-justify-content: center;
-flex-direction: row;
-flex-wrap: wrap;
+#buttons {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 83%;
+    padding-top: 5%;
+    margin: 0 auto;   
 }
-#buttons .button{
-position: relative;
-width: 20%;
-height: 12%;
-margin: 2% 2% 0% auto;
-padding-top: 4%;
-background-color: rgba(255, 255, 255, 1);
-text-align: center;
-font-size: 6vmin;
-font-weight: 400;
-border-radius: 25%;
+#buttons .button {
+    position: relative; 
+    width: 20%;
+    height: 12%;
+    margin: 2% 2% 0% auto;
+    padding-top: 4%;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 25%;
+    text-align: center;
+    font-size: 6vmin;
+    font-weight: 400; 
 }
-#buttons .button:hover{
-background-color: rgba(195, 218, 97, 0.747);
-background-position: 0 -27px;
-cursor: pointer;
+#buttons .button:hover {
+    background-color: rgba(195, 218, 97, 0.747);
+    background-position: 0 -27px;
+    cursor: pointer;
 }
-#buttons .button:active{
-background-color: rgb(106, 109, 103);  
-background-position: 0 -54px;
-cursor: pointer;
+#buttons .button:active {
+    background-color: rgb(106, 109, 103);  
+    background-position: 0 -54px;
+    cursor: pointer;
 }
